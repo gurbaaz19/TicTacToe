@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +16,13 @@ class MainActivity : AppCompatActivity() {
         val etName = findViewById<EditText>(R.id.et_name)
 
         btnStart.setOnClickListener{
+            if(!etName.toString().isEmpty()){
             intent = Intent(this,GameActivity::class.java)
             intent.putExtra(Constants.USER_NAME,etName.text.toString())
-            startActivity(intent)
+            startActivity(intent)}
+            else{
+                Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
