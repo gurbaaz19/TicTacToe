@@ -10,4 +10,8 @@
     <color name="colorPrimary">#FE1342</color>
     <color name="colorPrimaryVariant">#9A1B26</color>
     <color name="colorAccent">#FE1313</color>
+    <color name="turn">#76FF03</color>
+    <color name="noTurn">#FF000000</color>
+    <color name="result">#FE1313</color>
+    <color name="winner">#64DD17</color>
 </resources>

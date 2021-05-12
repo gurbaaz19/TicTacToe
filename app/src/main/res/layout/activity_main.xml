@@ -34,20 +34,40 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="#7E7E7E"
         >
 
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_name"
+            android:id="@+id/et_name_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
-            tools:text="Name"
-            android:textColorHint="#7E7E7E"
+            android:hint="Player 1"
             android:background="@color/black"
             android:textColor="@color/white"
             android:singleLine="true"
             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="#7E7E7E"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 2"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
